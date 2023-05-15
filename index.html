@@ -9,6 +9,13 @@
 	</head>
 	<body class="is-preload">
 
+	<style type="text/css">
+		.br {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+	</style>
+
 		<!-- Header -->
 			<section id="header">
 				<header>
@@ -101,6 +108,8 @@
 											<li><h1>Matlab & Simulink</h1></li>
 											<li><h1>Arduino</h1></li>
 											<li><h1>Python</h1></li>
+											<li><h1>Tensorflow</h1></li>
+											<li><h1>Pytorch</h1></li>
 											<li><h1>Raspberry Pi</h1></li>
 											<li><h1>HTML5</h1></li>
 											<li><h1>C++</h1></li>
@@ -121,9 +130,57 @@
 									<!--<p>Here is a list of some of the projects I have worked on throughout my education</p>-->
 									<div class="features">
 										<article>
+											<a href="#" class="image"><img src="images/Liver_Robot_2_edit.PNG" alt="" onClick="return false;"/></a>
+											<div class="inner">
+												<h4>CT-Guided Abdominal Radio-frequency Ablation Robot</h4>
+												<p> This work presents the design, fabrication, modeling, and benchtop characterization of a CT-guided parallel
+													robot, and a novel respiration motion compensation protocol (RMCP) for effective robot-assisted abdominal RFA needle placement. The robot consists of a Stewart platform with a friction
+													drive roller insertion module for autonomous needle deployment. The robot was characterized in free-space, an ex-vivo dynamic porcine liver, and in an animal trial with a mature swine undergoing
+													assisted respiration.
+												</p>
+													<p><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10098111" class="button primary small fit">see journal publication in IEEE TMRB</a></p>
+												</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/Hog_retake_trim.gif" alt="" onClick="return false;"/></a>
+											<div class="inner">
+												<h4>A Deep Learning Approach to Surface Reconstruction from Multi-View Images</h4>
+												<p>For my final project in the course CSCE 5563 Intro to Deep Learning, a literature review and implementation of the <b>Neu</b>ral <b>S</b>urface (<b>NeuS</b>) reconstruction technique was done.
+													This approach is capable of producing higher quality surface reconstructions than the popular <b>Ne</b>ural <b>R</b>adiance <b>F</b>ield (<b>NeRF</b>) approach. For the implementation, several 2D images of a toy razorback was taken and used to train the model to learn the neural implicit surface representation. With the trained model, a high quality surface
+													could be extracted and then used to interpolate between images for novel view synthesis.
+
+												</p>
+													<span class="br"><a href="https://github.com/Mjmusa/Mjmusa.github.io/raw/main/CSCE_5563_Final_Project_Report.pdf" class="button primary small fit">see the final report</a></span>
+													<a href="https://arxiv.org/pdf/2106.10689.pdf" class="button primary small fit">see the reference work by Wang et al.</a>
+												</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/Soft_Robot.PNG" alt="" onClick="return false;"/></a>
+											<div class="inner">
+												<h4>Kinematics and Stiffness Modeling of Soft Robot</h4>
+												<p>Soft robots can undergo large elastic deformations and adapt to complex shapes. However,
+												    they lack the structural strength to withstand external loads due to the intrinsic compliance
+													of fabrication materials (silicone or rubber). In this paper, we present a novel stiffness modulation approach that controls the robot's 
+													stiffness on-demand without permanently affecting the intrinsic compliance of the elastomeric body.
+												</p>
+													<p><a href="https://asmedigitalcollection.asme.org/mechanismsrobotics/article-abstract/15/5/051011/1147243/Kinematics-and-Stiffness-Modeling-of-Soft-Robot" class="button primary small fit">see journal publication in ASME JMR</a></p>
+												</div>
+										</article>
+										<article>
+											<a href="#" class="image"><img src="images/ASRI.PNG" alt="" onClick="return false;"/></a>
+											<div class="inner">
+												<h4>Machine Learning Approaches for the Classification of Materials' Crystalline Structures</h4>
+												<p> My final project for the 2022 Arkansas Summer Research Institute (ASRI) invesitgated machine learning techniques for classifying materials from the 3D DFT dataset of the Joint 
+													Automated Repository for Various Integrated Simulations (JARVIS). Techniques such as random forest classifiers, gradient boosting trees, and neural networks
+													were used to classify over 5000 materials into their crystalline structures based on features such as formation energy, bandgap, density, and others.
+												</p>
+													<p><a href="https://github.com/Mjmusa/Mjmusa.github.io/raw/main/ASRI%202022%20Presentation%20Mishek%20Musa.pdf" class="button primary small fit">see ASRI final presentation</a></p>
+												</div>
+										</article>
+										<article>
 											<a href="#" class="image"><img src="images/settingupbot.PNG" alt="" onClick="return false;"/></a>
 											<div class="inner">
-												<h4>MRI-Compatible Parallel Robot in the MRI!</h4>
+												<h4>MRI-Compatible Parallel Robot in the MRI</h4>
 												<p>After a long period of waiting due to travel restrictions we finally got the opportunity to test the robot out in the MRI bore! I travelled ~8 hrs
 													to Nashville, TN to the Vanderbilt University Medical Center (VUMC) where we spent 2 (sleepless) days testing the robot in the MRI. The results from
 													these experiments were used to extend our previous work for the ISMR conference into a journal paper.
@@ -139,7 +196,8 @@
 													In this work, we attempt to mitigate this issue through the use of a novel soft robotic pressure based sensing pad. Modal based calibration
 													and Gaussian Process Regression are used to experimentally correlate head motion and sensor pressure readings.
 												</p>
-													<p><a href="https://ieeexplore.ieee.org/document/9698999" class="button primary small fit">see journal publication in ICRA/IEEE RA-L</a></p>
+													<span class="br"><a href="https://ieeexplore.ieee.org/document/9698999" class="button primary small fit">see journal publication in ICRA/IEEE RA-L</a></span>
+													<a href="https://archive.ismrm.org/2022/2060.html" class="button primary small fit">see conference publication in ISMRM</a>
 												</div>
 										</article>
 										<article>
@@ -163,7 +221,8 @@
 													dual cartesian stages used to control the 4 DoF pose of a needle insertion module. The needle insertion module is a 3D printed flexible 
 													fluidic actuator capable of a step-like, grasp-insert-release actuation that mimics the manual insertion procedure currently used in clinical 
 													practice. </p>
-													<p><a href="https://ieeexplore.ieee.org/abstract/document/9366945" class="button primary small fit">see journal publication in IEEE TMECH</a></p>
+													<span class="br"><a href="https://ieeexplore.ieee.org/abstract/document/9366945" class="button primary small fit">see journal publication in IEEE TMECH</a></span>
+													<a href="https://patentimages.storage.googleapis.com/e4/8a/cb/9e082e88001bf8/US20220142702A1.pdf" class="button primary small fit">check out the patent</a>
 													
 											</div>
 										</article>
